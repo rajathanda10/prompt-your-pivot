@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prompt Your Pivot Toolkit</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    h1, h2, h3 {
+      color: #2c3e50;
+    }
+    .prompt {
+      background: #fff;
+      border: 1px solid #ccc;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      position: relative;
+    }
+    .copy-btn {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      background: #3498db;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+      border-radius: 3px;
+    }
+    pre {
+      white-space: pre-wrap;
+      word-wrap: break-word;
+    }
+  </style>
+</head>
+<body>
+  <h1>Prompt Your Pivot™ – AI Career Toolkit</h1>
+
+  <h2>Resume Generator Prompts</h2>
+  <div class="prompt">
+    <button class="copy-btn" onclick="copyToClipboard('prompt1')">Copy</button>
+    <pre id="prompt1">You are a resume writer for the Australian job market. Rewrite my resume to better match this job description, using strong, action-based language that reflects real outcomes. Keep it concise and ATS-friendly.
+
+- Job description: [paste job ad]
+- My current resume: [paste bullet points or career summary]
+- Target industry: [e.g., fintech, gov, CX]</pre>
+  </div>
+
+  <div class="prompt">
+    <button class="copy-btn" onclick="copyToClipboard('prompt2')">Copy</button>
+    <pre id="prompt2">Help me write a compelling career summary for a professional with 15 years in banking operations, now pivoting to customer success or business analyst roles. Highlight transferable skills like stakeholder engagement, analytical mindset, and client-facing experience.</pre>
+  </div>
+
+  <div class="prompt">
+    <button class="copy-btn" onclick="copyToClipboard('prompt3')">Copy</button>
+    <pre id="prompt3">Generate 3 strong resume bullet points for a mid-career operations lead who implemented new onboarding systems, improved customer satisfaction, and led a 5-person team. Use active verbs and include measurable outcomes.</pre>
+  </div>
+
+  <h2>LinkedIn Makeover Prompts</h2>
+  <div class="prompt">
+    <button class="copy-btn" onclick="copyToClipboard('prompt4')">Copy</button>
+    <pre id="prompt4">Write 5 engaging LinkedIn headlines for someone with 10+ years in financial services, now targeting AI-enabled roles like Customer Success, Business Analyst, or Transformation Advisor. Keep it under 120 characters.</pre>
+  </div>
+
+  <div class="prompt">
+    <button class="copy-btn" onclick="copyToClipboard('prompt5')">Copy</button>
+    <pre id="prompt5">Write a compelling LinkedIn About section for a mid-career professional with experience in sales, banking, and digital transformation. The tone should be confident, future-ready, and lightly mention interest in AI tools.</pre>
+  </div>
+
+  <div class="prompt">
+    <button class="copy-btn" onclick="copyToClipboard('prompt6')">Copy</button>
+    <pre id="prompt6">Write a LinkedIn post announcing my decision to pivot from traditional banking roles into AI-enhanced customer experience roles. I want to share my learning journey, tools I’ve mastered (e.g., ChatGPT, Notion AI), and invite people to connect.</pre>
+  </div>
+
+  <h2>Outreach & Networking Prompts</h2>
+  <div class="prompt">
+    <button class="copy-btn" onclick="copyToClipboard('prompt7')">Copy</button>
+    <pre id="prompt7">Write a friendly, 5-sentence message to a hiring manager at [company] for a [job title] role. Mention shared interest in transformation, my background in FSS, and ask for a quick chat.</pre>
+  </div>
+
+  <div class="prompt">
+    <button class="copy-btn" onclick="copyToClipboard('prompt8')">Copy</button>
+    <pre id="prompt8">Write a message I can send on LinkedIn to someone who works in customer experience at an Australian fintech. I want to learn about their role and how they transitioned. Keep it polite, low-pressure, and curious.</pre>
+  </div>
+
+  <div class="prompt">
+    <button class="copy-btn" onclick="copyToClipboard('prompt9')">Copy</button>
+    <pre id="prompt9">Write a follow-up email after a job interview for a business analyst role in the insurance industry. Thank them, mention my excitement about their data modernization project, and offer a specific way I can add value.</pre>
+  </div>
+
+  <h2>AI Interview Coach Prompts</h2>
+  <div class="prompt">
+    <button class="copy-btn" onclick="copyToClipboard('prompt10')">Copy</button>
+    <pre id="prompt10">Act as an interview coach. Give me 10 likely behavioral interview questions for a Customer Success Manager role at a fintech in Sydney. Include 1–2 technical or case-style questions.</pre>
+  </div>
+
+  <div class="prompt">
+    <button class="copy-btn" onclick="copyToClipboard('prompt11')">Copy</button>
+    <pre id="prompt11">Here’s my answer to the question: ‘Tell me about a time you managed a difficult stakeholder.’ Please suggest improvements in structure, clarity, and tone.
+
+- My answer: [paste your draft]</pre>
+  </div>
+
+  <div class="prompt">
+    <button class="copy-btn" onclick="copyToClipboard('prompt12')">Copy</button>
+    <pre id="prompt12">Help me structure this experience into STAR format: I led a small team to redesign our onboarding process, reducing errors by 40% and improving customer satisfaction.</pre>
+  </div>
+
+  <script>
+    function copyToClipboard(id) {
+      const text = document.getElementById(id).innerText;
+      navigator.clipboard.writeText(text).then(() => {
+        alert('Prompt copied to clipboard!');
+      });
+    }
+  </script>
+</body>
+</html>
